@@ -1,0 +1,371 @@
+  /* .create-account-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+  }
+ 
+  .create-account-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+ 
+  .create-account-form h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #555;
+    border-bottom: 2px solid #91d6fc;
+    padding-bottom: 10px;
+  }
+ 
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: none; 
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 95%;
+  }
+ 
+  .form-group input:focus,
+  .form-group select:focus {
+    border-bottom: 1px solid #91d6fc;
+    outline: none;
+  }
+ 
+  .form-group-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10vh;
+  }
+ 
+  .mobile-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+ 
+  .mobile-input select {
+    width: 25%;
+  }
+ 
+  .mobile-input input {
+    width: 100%;
+  }
+ 
+  .password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .password-input input {
+    width: 100%;
+    padding-right: 40px;
+  }
+ 
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+  }
+ 
+  .password-requirements {
+    margin-top: 10px;
+  }
+ 
+  .password-requirements p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #888;
+  }
+ 
+  .password-requirements .valid {
+    color: #28a745;
+  }
+ 
+  .password-requirements .invalid {
+    color: #dc3545;
+  }
+ 
+  .password-requirements svg {
+    margin-right: 8px;
+  }
+ 
+  .password-strength {
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .password-strength .strength {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+ 
+  .strength.very\ weak {
+    background-color: #dc3545;
+  }
+ 
+  .strength.weak {
+    background-color: #ffc107;
+  }
+ 
+  .strength.medium {
+    background-color: #17a2b8;
+  }
+ 
+  .strength.strong {
+    background-color: #28a745;
+  }
+ 
+  .terms {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  .terms a {
+    color: #91d6fc;
+    text-decoration: none;
+  }
+ 
+  .terms a:hover {
+    text-decoration: underline;
+  }
+ 
+  .create-account-button {
+    width: 80%;
+    padding: 15px;
+    background-color: #91d6fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s;
+  }
+ 
+  .create-account-button:hover {
+    background-color: #79c1e4;
+  }
+ 
+  @media (max-width: 768px) {
+    .create-account-container {
+      padding: 15px;
+      margin: 20px;
+      margin-bottom: 70px;
+    }
+ 
+    .form-group {
+      margin-bottom: 15px;
+    }
+   
+    .form-group select {
+      width: 100%;
+    }
+   
+    .password-requirements p {
+      font-size: 13px;
+    }
+ 
+    .password-strength {
+      font-size: 13px;
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    .mobile-input select {
+      width: 25%;
+    }
+   
+    .mobile-input input {
+      margin-left: 2%;
+    }
+  }
+  */
+
+.error {
+  color: red;
+  font-size: 0.875rem; 
+  margin-top: 0.25rem;
+}
+
+.password-requirements p.valid {
+  color: green;
+  display: flex;
+  align-items: center;
+}
+
+.password-requirements p.invalid {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.password-strength {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.password-strength p {
+  margin: 0;
+  color: #333;
+}
+
+
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+
+    .password-toggle-icon {
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  input {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #393737;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  
+  button {
+    background-color: #8003a5;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  p {
+    color: #383633;
+    font-weight: bold;
+  }
+  
+  .signup-form h1 {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .signup-form h2::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .ctr {
+    display:'flex';
+    justify-content: center;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .signup-form {
+      width: 90%;
+      margin-top: -800px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signup-form {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+    
+    input,
+    select,
+    button {
+      padding: 8px;
+    }
+  }
+  

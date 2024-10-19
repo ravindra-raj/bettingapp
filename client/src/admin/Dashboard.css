@@ -1,0 +1,109 @@
+.dashboard1 {
+  padding: 10px;
+  /* background-color: white; */
+  background: linear-gradient(to right, #5fe7ff, #feb47b,#a767f1);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+th{
+  border: 2px solid black;
+}
+.card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid black;
+  width: 30%;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.chart {
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+/* .pie-chart {
+  margin-bottom: 20px;
+  text-align: center;
+} */
+.Cards-icons {
+  font-size: 40px; /* Adjust icon size */
+  color: #4CAF50; /* Set icon color */
+  margin-bottom: 10px; /* Add space between the icon and text */
+}
+/* .pie-chart h3 {
+  margin-bottom: 10px;
+  color: #333;
+} */
+
+.recent-users {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-users h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recent-users ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-users li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+.recent-users li:last-child {
+  border-bottom: none;
+}
+
+.recent-users span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+.chart{
+  width: 95%;
+}
+.recent-users{
+  margin-top: 20px;
+}
+  .recent-users span {
+    display: block;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,47 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -20%;
+    width: 20%;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  

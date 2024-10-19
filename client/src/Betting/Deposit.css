@@ -1,0 +1,141 @@
+/* Container styles */
+.deposit-container {
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+/* Button styles */
+.quick-pay-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0ad4e;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.payment-buttons {
+    display: flex; /* Use flexbox for the button layout */
+    justify-content: space-between; /* Space out buttons evenly */
+    margin: 20px 0;
+}
+
+.payment-button.upi {
+    flex: 1; /* Allow buttons to grow equally */
+    margin: 0 5px; /* Add margin for spacing */
+    padding: 10px;
+    font-size: 16px;
+    /* background-color: #c8e6c9; */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-button.hovered {
+    background-color: #4CAF50; /* Change color on hover */
+}
+
+.amount-input-container {
+    margin-bottom: 20px;
+}
+
+.amount-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%; /* Full width for mobile */
+    border: 2px solid black;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    placeholder {
+        text-align: center; /* Center placeholder text */
+    }
+}
+
+/* Preset buttons */
+.preset-buttons {
+    display: grid; /* Use grid layout for preset buttons */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between buttons */
+    margin: 20px 0;
+}
+
+.preset-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Next button */
+.next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width for mobile */
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px; /* Responsive max-width */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Modal heading */
+.modal h3 {
+    margin-top: 0;
+}
+
+/* Payment details */
+.payment-details {
+    margin-bottom: 20px;
+}
+
+/* Modal buttons */
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #fff;
+    width: 30%; /* Adjust width */
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button {
+    background-color: #4CAF50;
+    color: #fff;
+    width: 30%; /* Adjust width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .modal {
+        width: 90%; /* Wider modal for mobile */
+        height: auto; /* Auto height for content */
+    }
+}

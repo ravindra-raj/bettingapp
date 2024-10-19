@@ -1,0 +1,103 @@
+/* Global styles */
+.list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #5fe7ff, #feb47b,#a767f1);
+    /* background-color:white;  */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 90vh; /* Ensure full height of the container */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.list-heading {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #217CC7; /* Match the main background color */
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; /* Keep table background white */
+    border-radius: 8px;
+}
+
+.table-head {
+    background-color: #a0a3a5;
+}
+
+.table-header {
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.table-body-cell {
+    padding: 10px;
+    font-size: 50px;
+    color:  #000000; 
+    background-color: white;
+   /* border: 2px solid black; */
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Tablet view and below - Retain Table Layout */
+@media screen and (max-width: 768px) {
+    .table {
+        width: 100%;
+        display: table; /* Keep table layout */
+    }
+
+    .table-header {
+        font-size: 14px; /* Adjust font size */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .table-body-cell {
+        font-size: 12px; /* Smaller font size for readability */
+        padding: 8px; /* Adjust padding */
+        border: 2px solid black;
+    }
+
+    .list-container {
+        padding: 10px;
+        /* background-color: #217CC7; Full background color */
+    }
+}
+
+/* Mobile view - Further adjustments */
+@media screen and (max-width: 480px) {
+    .table-header {
+        font-size: 12px; /* Further reduce font size */
+        padding: 6px; /* Adjust padding */
+    }
+
+    .table-body-cell {
+        font-size: 10px; /* Adjust font size */
+        padding: 6px; /* Further adjust padding */
+    }
+
+    .list-container {
+        padding: 10px;
+        /* background-color: #217CC7; Full background color */
+    }
+}
+table th, table td {
+    border: 2px solid black;
+}
+table td{
+    font-weight: bold;
+}

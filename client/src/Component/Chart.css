@@ -1,0 +1,381 @@
+/* Chart.css */
+ 
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+ 
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+ .chart-expense-detail1{
+  color: red;
+ }
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  margin-left: 15%;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+ 
+.expense-item {
+  cursor: pointer;
+}
+ 
+.category-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+ 
+.chart-total-expenses-container,
+.chart-category-expenses-container {
+  margin-bottom: 20px;
+}
+ 
+.chart-expense-list {
+  list-style: none;
+  padding: 0;
+}
+ 
+.chart-expense-list .chart-expense-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+ 
+.chart-total-expenses-container {
+  margin-bottom: 1px;
+  height: 20vh;
+}
+ 
+.chart-expense-info {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.chart-expense-detail {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+ 
+.chart-expense-value {
+  margin-left: 50px;
+  font-size: 15px;
+}
+ 
+.chart-expense-value1 {
+  margin-left: 50px;
+  font-size: 15px;
+  color: red;
+}
+ 
+.chart-pie-chart {
+  margin-bottom: 20px; /* Adjust the value to set the desired gap */
+}
+ 
+.chart-MuiChartsLegend-root {
+  margin-top: 20px; /* Adjust the value to set the desired gap */
+}
+ 
+.chart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 977px;
+  margin-left: 246px;
+  margin-top: 20px;
+}
+ 
+.chart-ch{
+  margin-top: 10px;
+}
+ 
+.chart-line-chart {
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  margin: 0 auto;
+}
+ 
+ 
+@media (min-width: 360px) and (max-width: 420px) {
+  .chart {
+    width: 88%;
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: none;
+    overflow: hidden;
+}
+ 
+  .chart-expense-detail {
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .chart-expense-value,
+  .chart-expense-value1 {
+    margin-left: 0;
+    font-size: 14px;
+  }
+ 
+  .chart-category-checkboxes {
+    flex-direction: column;
+    gap: 5px;
+  }
+ 
+  .chart-legend-container div {
+    margin: 5px 0;
+  }
+ 
+  .chart-expense-list {
+    list-style: none;
+    padding: 0;
+    width: 345px;
+  }
+ 
+  .chart-ch {
+    width: 354px;
+    margin-left: 5px;
+    margin-top: 115px;
+}
+ 
+  .chart-legend-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .chart-total-expenses-container,
+  .chart-expense-info {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+ 
+  .chart-hide-data .chart-pie-chart {
+    display: block;
+  }
+  .chart-hide-data .chart-series-data {
+    display: none;
+  }
+  .chart-expense-list .chart-expense-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 305px;
+}
+
+.chart-modal-content {
+  background: white;
+  border-radius: 8px;
+  margin-left: 0%;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+}
+ 
+ 
+@media (min-width: 421px) and (max-width: 768px){
+  .chart {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: none;
+}
+ 
+  .chart-expense-detail {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .chart-expense-value,
+  .chart-expense-value1 {
+    margin-left: 0;
+    font-size: 14px;
+  }
+ 
+  .chart-category-checkboxes {
+    flex-direction: column;
+    gap: 5px;
+  }
+ 
+  .chart-legend-container div {
+    margin: 5px 0;
+  }
+ 
+  .chart-expense-list {
+    list-style: none;
+    padding: 0;
+    width: 187%;
+    margin-left: 0;
+}
+ 
+  .chart-ch {
+    width: 200%;
+    margin-left: -22px;
+    margin-top: 20px;
+}
+ 
+  .chart-legend-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+ 
+  .chart-expense-info {
+    flex-direction: column;
+  }
+  .chart-total-expenses-container{
+    margin-left: -10px;
+  }
+ 
+  .chart-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+ 
+ 
+/* Small Screen (max-width: 390px) */
+@media (max-width: 390px) {
+  .chart-small-screen-visible {
+    display: block;
+  }
+ 
+  .chart-pie-chart.chart-small-screen-visible {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+ 
+  .chart-category-expenses-container.chart-small-screen-visible {
+    display: block;
+    width: 80%;
+  }
+}
+ 
+@media (min-width: 769px) and (max-width: 825px){
+  .chart {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: none;
+}
+ 
+  .chart-expense-detail {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .chart-expense-value,
+  .chart-expense-value1 {
+    margin-left: 0;
+    font-size: 14px;
+  }
+ 
+  .chart-category-checkboxes {
+    flex-direction: column;
+    gap: 5px;
+  }
+ 
+  .chart-legend-container div {
+    margin: 5px 0;
+  }
+ 
+  .chart-expense-list {
+    list-style: none;
+    padding: 0;
+    width: 187%;
+    margin-left: 0;
+}
+ 
+  .chart-ch {
+    width: 200%;
+    margin-left: -22px;
+    margin-top: 20px;
+}
+ 
+  .chart-legend-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+ 
+  .chart-expense-info {
+    flex-direction: column;
+  }
+  .chart-total-expenses-container{
+    margin-left: -10px;
+  }
+ 
+  .chart-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+ 
+ 
+/* Small Screen (max-width: 390px) */
+@media (max-width: 390px) {
+  .chart-small-screen-visible {
+    display: block;
+  }
+ 
+  .chart-pie-chart.chart-small-screen-visible {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+ 
+  .chart-category-expenses-container.chart-small-screen-visible {
+    display: block;
+    width: 80%;
+  }
+}
+ 
+@media (min-width: 841px) and (max-width: 1115px)   {
+  .chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 977px;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+}

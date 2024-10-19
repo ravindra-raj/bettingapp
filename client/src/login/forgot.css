@@ -1,0 +1,60 @@
+.forgot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fad0c4, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
+  }
+  
+  .forgot-form {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forgot-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .forgot-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .forgot-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .forgot-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-form p {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+  }
+  

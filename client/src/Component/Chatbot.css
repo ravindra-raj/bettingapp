@@ -1,0 +1,151 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+  }
+   
+  .wrapper {
+    width: 80%;
+    max-width: 600px; 
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 10%;
+    margin-left: 5%;
+    background: #ffffff;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25%;
+  }
+   
+  .header1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+   
+  .header1 .img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+   
+  .header1 .right {
+    margin-left: 10px;
+  }
+   
+  .header1 .right .name {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+   
+  .header1 .right .status {
+    color: #28a745;
+    font-weight: 500;
+  }
+   
+  .main {
+    margin-bottom: 20px;
+  }
+   
+  .main .messages {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .bot-message, .human-message {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+   
+  .bot-message {
+    background: #e9ecef;
+    color: #333;
+  }
+
+  .abc {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+  }
+
+  .btm {
+    border: white;
+    }
+   
+  .human-message {
+    background: #007bff;
+    color: #fff;
+    align-self: flex-end;
+  }
+   
+  .input {
+    flex: 1;
+    
+  }
+   
+   
+  .btn {
+    margin-left: 10px;
+  }
+   
+  .btn button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1em;
+  }
+   
+  @media (max-width: 768px) {
+    .header1 .name {
+      font-size: 1.1em;
+    }
+   
+    .input input {
+      height: 40px;
+      width: 60%;
+      font-size: 0.9em;
+    }
+   
+    .btn button {
+      height: 40px;
+      font-size: 0.9em;
+    }
+  }
+   
+  @media (max-width: 480px) {
+    .header1 .img img {
+      width: 40px;
+      height: 40px;
+    }
+   
+    .header1 .name {
+      font-size: 1em;
+    }
+   
+    .input input {
+      height: 35px;
+      
+      font-size: 0.8em;
+    }
+   
+    .btn button {
+      height: 35px;
+      font-size: 0.8em;
+    }
+  }
+   
+   

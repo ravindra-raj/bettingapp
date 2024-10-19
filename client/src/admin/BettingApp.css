@@ -1,0 +1,132 @@
+.betting-app {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #5fe7ff, #feb47b,#a767f1);
+
+    box-sizing: border-box;
+  }
+   
+  .match-section {
+    margin-bottom: 40px;
+  }
+   
+  .pie-chart {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+   
+  /* Table Styles */
+  .betting-table {
+    margin-top: 20px;
+  }
+   
+  .betting-table table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden; /* Prevent overflow */
+  }
+   
+  .betting-table th, .betting-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+   
+  .betting-table th {
+    background-color: #f4f4f4;
+  }
+   
+  /* Responsive Styles */
+  @media (max-width: 768px) { /* Tablets and smaller devices */
+    .betting-app {
+      padding: 15px;
+    }
+   
+    .pie-chart {
+      max-width: 100%; /* Ensure pie chart is fully responsive */
+    }
+  }
+  @media (max-width: 480px) { /* Mobile devices */
+    .betting-app {
+      padding: 10px;
+    }
+   
+    .pie-chart {
+      max-width: 100%; /* Ensure pie chart fits within mobile view */
+    }
+   
+    .betting-table table {
+      font-size: 12px; /* Reduce font size for mobile */
+    }
+   
+    .betting-table th, .betting-table td {
+      padding: 6px;
+    }
+  }
+   
+   
+  
+  .match-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .pie-chart {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .betting-table {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .betting-table h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .betting-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .betting-table th, .betting-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .betting-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .betting-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 768px) {
+    .pie-chart {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    .betting-table {
+      padding: 15px;
+    }
+  
+    .betting-table table {
+      font-size: 0.9rem;
+    }
+  
+    .betting-table th, .betting-table td {
+      padding: 6px;
+    }
+  }
+  

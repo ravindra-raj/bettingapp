@@ -1,0 +1,145 @@
+.expense {
+    /* background-color: #e9e7e7; */
+     background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 650px;
+    margin-left: 422px;
+    font-family: math;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Decreased the gap between items */
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.expense-form .input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-form input,
+.expense-form textarea,
+.expense-form select {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background: transparent;
+    resize: none;
+    color: rgba(34, 34, 96, 0.9);
+    width: 100%; /* Ensure all inputs take full width of their container */
+    max-width: 600px; /* Set a max-width to control the overall size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.expense-form input::placeholder,
+.expense-form textarea::placeholder,
+.expense-form select::placeholder {
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.expense-form .selects {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.expense-form .selects select {
+    color: rgba(34, 34, 96, 0.4);
+}
+
+.expense-form .selects select:focus,
+.expense-form .selects select:active {
+    color: rgba(34, 34, 96, 1);
+}
+
+.expense-form .submit-btn {
+    grid-column: span 2; /* Span across both columns */
+    display: flex;
+    justify-content: space-between; /* Separate buttons on opposite ends */
+    margin-top: 33px;
+}
+
+.expense-form .submit-btn button {
+    padding: .8rem 1.6rem;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: -14px; /* Automatically align to the right */
+}
+
+.expense-form .submit-btn button:hover {
+    background-color: var(--color-green);
+}
+
+@media (max-width: 420px) {
+    .expense {
+        background-color: #e9e7e7;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 51px;
+        width: 308px;
+        margin-left: 18px;
+    }
+    .expense-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 15px;
+        margin-left: -13px;
+        width: 337px;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .expense {
+        background-color: #e9e7e7;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 51px;
+        width: 650px;
+        margin-left: 46px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 825px) {
+    .expense {
+        background-color: #e9e7e7;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 64px;
+        width: 650px;
+        margin-left: 65px;
+    }
+}
+@media (min-width: 360px) and (max-width: 420px) {
+    .expense-form .submit-btn {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        margin-left: 10px;
+    }
+
+    .expense {
+        background-color: #e9e7e7;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 25px;
+        width: 308px;
+        margin-left: 18px;
+        height: 701px;
+    }
+}

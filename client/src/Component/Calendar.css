@@ -1,0 +1,459 @@
+.calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 35px;
+}
+
+.calendar-wrapper header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.expense-value1{
+    color: red;
+}
+.calendar-wrapper h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.calendar-wrapper button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.calendar-wrapper button:hover {
+    background: #0056b3;
+}
+
+.calendar-wrapper .days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.calendar-wrapper .day-name {
+    padding: 0.5rem 0;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-wrapper .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    text-align: center;
+    height: 384px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #f8f9fa;
+}
+
+.calendar-wrapper .day {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.calendar-wrapper .day:hover {
+    background: #e9ecef;
+    transform: scale(1.05);
+}
+
+.calendar-wrapper .empty {
+    padding: 1rem;
+}
+
+.calendar-wrapper .expenses {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-wrapper .expense-item {
+    margin-top: 0.5rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.calendar-wrapper .total-expenses {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.list-container {
+    margin: 1rem 0;
+}
+
+.date-expenses-container {
+    margin-bottom: 1rem;
+}
+
+.date-header {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expense-item {
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.expense-item:hover {
+    background: #e9ecef;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    max-width: 205px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.total-expenses-container {
+    margin-bottom: 1rem;
+    height: 20vh;
+}
+
+.expense-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-detail1 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.expense-detail2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.expense-detail3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.expense-value {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.expense-value1 {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: red;
+}
+
+.ex {
+    margin-top: 30px;
+}
+
+.Calendar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1045px;
+    margin: 25px auto;
+    height: auto;
+    overflow: hidden;
+    font-family: math;
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .Calendar {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 92%;
+        max-width: 1045px;
+        margin: 25px auto;
+        height: auto;
+        overflow: hidden;
+        font-family: math;
+    }
+
+    .calendar-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 35px;
+        width: 681px;
+    }
+}
+@media (min-width: 769px) and (max-width: 840px)   {
+    .Calendar {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 92%;
+        max-width: 1045px;
+        margin: 25px auto;
+        height: auto;
+        overflow: hidden;
+        font-family: math;
+    }
+
+    .calendar-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 35px;
+        width: 705px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 420px)  {
+    .Calendar {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 85%;
+        max-width: 1045px;
+        margin: 25px auto;
+        height: auto;
+        overflow: hidden;
+        font-family: math;
+    }
+
+    .calendar-wrapper .day {
+        padding: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .calendar-wrapper .expenses {
+        font-size: 0.5rem;
+    }
+
+    .calendar-wrapper .day-number {
+        font-size: 0.8rem;
+    }
+
+    .calendar-wrapper .day-name {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        max-width: 100%;
+    }
+    .calendar-wrapper .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 129%;
+        text-align: center;
+        height: 350px;
+        border: 1px solid #ddd;
+        border-top: none;
+        background: #f8f9fa;
+    }
+
+    .calendar-wrapper .days-of-week {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 135%;
+        text-align: center;
+        margin-top: 1rem;
+        color: #555;
+        font-weight: bold;
+    }
+
+    .ex {
+        margin-top: 41px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px)  {
+    .Calendar {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin: 20px auto;
+        height: auto;
+        overflow: hidden;
+        font-family: math;
+    }
+
+    .calendar-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        margin-top: 20px;
+        width: 271px;
+    }
+
+    .calendar-wrapper header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .calendar-wrapper h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .calendar-wrapper button {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .calendar-wrapper .days-of-week {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 120%;
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #555;
+        font-weight: bold;
+    }
+
+    .calendar-wrapper .day-name {
+        padding: 0.2rem 0;
+        font-size: 0.7rem;
+    }
+
+    .calendar-wrapper .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 120%;
+        text-align: center;
+        height: auto;
+        border: 1px solid #ddd;
+        border-top: none;
+        background: #f8f9fa;
+    }
+
+    .calendar-wrapper .day {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .calendar-wrapper .day:hover {
+        transform: none;
+    }
+
+    .calendar-wrapper .expenses {
+        font-size: 0.8rem;
+    }
+
+    .calendar-wrapper .expense-item {
+        margin-top: 0.1rem;
+        font-size: 8px;
+    }
+
+    .calendar-wrapper .total-expenses {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .expense-info {
+        flex-direction: column;
+    }
+
+    .expense-detail1,
+    .expense-detail2,
+    .expense-detail3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .expense-value,
+    .expense-value1 {
+        font-size: 0.8rem;
+    }
+
+    .ex {
+        margin-top: 54px;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1115px)   {
+    .Calendar {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        width: 92%;
+        max-width: 1045px;
+        margin: 25px auto;
+        height: auto;
+        overflow: hidden;
+        font-family: math;
+    }
+
+    .calendar-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 35px;
+        width: 990px;
+    }
+}
+

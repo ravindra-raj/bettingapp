@@ -1,0 +1,106 @@
+/* Base styles for the CreditScore component */
+.credit-score-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px; /* Maximum width for larger screens */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styles */
+h2, h3 {
+    text-align: center; /* Center align headings */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+/* Summary section styles */
+.summary {
+    margin-bottom: 20px; /* Space below summary */
+    padding: 10px; /* Padding inside summary */
+    background-color: #fff; /* White background */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+/* Paragraph styles in summary */
+.summary p {
+    margin: 8px 0; /* Space around paragraphs */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #555; /* Grey color */
+}
+
+/* List styles */
+.transaction-list, .withdrawal-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+/* Item styles for transactions and withdrawals */
+.transaction-item, .withdrawal-item {
+    padding: 10px; /* Padding for items */
+    background-color: #fff; /* White background for items */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for items */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out content */
+    font-size: 14px; /* Font size */
+    color: #555; /* Grey color */
+}
+
+/* Strong text styles within items */
+.transaction-item strong, .withdrawal-item strong {
+    color: #333; /* Darker color for labels */
+}
+
+/* Error message styles */
+.error {
+    color: red; /* Red color for errors */
+    font-weight: bold; /* Bold error text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .credit-score-container {
+        padding: 15px; /* Reduce padding */
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+
+    h2, h3 {
+        font-size: 20px; /* Font size for headings */
+    }
+
+    .summary p {
+        font-size: 14px; /* Smaller font size for summary paragraphs */
+    }
+
+    .transaction-item, .withdrawal-item {
+        font-size: 12px; /* Smaller font size for items */
+    }
+}
+
+@media (max-width: 480px) {
+    .credit-score-container {
+        padding: 10px; /* Further reduce padding */
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller font size for main heading */
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller font size for subheadings */
+    }
+
+    .summary p {
+        font-size: 12px; /* Smaller font size for summary paragraphs */
+    }
+
+    .transaction-item, .withdrawal-item {
+        font-size: 10px; /* Further reduce font size for items */
+    }
+}

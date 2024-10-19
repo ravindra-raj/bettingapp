@@ -1,0 +1,64 @@
+/* MobileNavbar.css */
+/* .mobile-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  } */
+
+  .mobile-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .mobile-navbar-item {
+    display: flex;
+    flex-direction: column; /* Stack the icon above the text */
+    align-items: center;
+    color: whitesmoke; /* Change the text color to whitesmoke */
+  }
+  
+  .mobile-navbar-icon {
+    font-size: 24px;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .mobile-navbar-item span {
+    font-size: 12px;
+    color: black; /* Ensure the text color is also whitesmoke */
+  }
+  .mobile-navbar-link {
+    text-decoration: none; /* Remove underline from links */
+    color: whitesmoke; /* Color of the link text */
+  }
+  @media (min-width: 769px) {
+    .mobile-navbar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-navbar {
+      display: block;
+    }
+  }
+  
+  

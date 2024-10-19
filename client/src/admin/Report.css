@@ -1,0 +1,110 @@
+/* Container styling */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Form elements */
+  .label, .input, .button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .report-user1{
+margin-top: 100px;
+margin-left: 50px;
+  }
+  .input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styling */
+  .table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  .report-user-input{
+    margin-top: 60px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 420px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 12px;
+    }
+    .report-user-input {
+      margin-top: 80px;
+  }
+  .report-user1 {
+    margin-left: 10px;
+}
+.report-expense1{
+  font-size: xx-small;
+}
+  }
+
+  @media (min-width: 320px) and (max-width: 359px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 12px;
+    }
+    .report-user-input {
+      margin-top: 80px;
+  }
+  .report-user1 {
+    margin-left: 10px;
+}
+.report-expense1{
+  font-size: 0.1rem;
+}
+  }
+  

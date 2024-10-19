@@ -1,0 +1,167 @@
+/* General Styles */
+.report-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #5fe7ff, #feb47b,#a767f1);
+}
+
+.report-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Tab Styles */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Input */
+.filter-input {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+}
+
+/* Download Button */
+.download-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Table Styles */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 2px solid black;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .filter-input, .download-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  table th, table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .report-container h1 {
+    font-size: 20px;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .tabs button {
+    font-size: 15px;
+  }
+
+  .filter-input, .download-button {
+    font-size: 15px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .report-container h1 {
+    font-size: 22px;
+  }
+}
+
+/* Laptop View */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .tabs button {
+    font-size: 16px;
+  }
+
+  .filter-input, .download-button {
+    font-size: 16px;
+  }
+
+  table th, table td {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .report-container h1 {
+    font-size: 24px;
+  }
+}

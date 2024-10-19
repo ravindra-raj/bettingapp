@@ -1,0 +1,247 @@
+   /* .profile-form-container {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 310px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+ 
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .form-group {
+    margin-bottom: 15px;
+  }
+ 
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+ 
+  .form-group input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+ 
+  .btn-submit, .btn-cancel {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  .btn-submit {
+    background-color: #28a745;
+    color: #fff;
+    margin-right: 10px;
+    width: 100px;
+  }
+ 
+  .btn-cancel {
+    background-color: #dc3545;
+    color: #fff;
+    width: 100px;
+    margin-left: 97px;
+  }
+ 
+  .btn-logout {
+    background-color: #f43f3f;
+    color: #fff;
+    width: 100px;
+    margin-left: 212px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: -40px;
+}
+ 
+  .btn-edit {
+    background-color: #4a82fa;
+    color: #fff;
+    width: 100px;
+    margin-left: 0px;
+    height: 40px;
+    border-radius: 5px;
+}
+ 
+@media (min-width: 841px) and (max-width: 1115px)   {
+  .profile-form-container {
+    position: fixed;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 310px;
+    border-radius: 10px;
+}
+}
+ 
+@media (min-width: 320px) and (max-width: 359px)  {
+  .profile-form-container {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 310px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+} */
+
+/* Dashboard.css */
+.dashboard {
+  background-color: #2a2a2a;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  background-color: #505050;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 120px;
+  max-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item span {
+  margin-top: 10px;
+}
+
+.menu-item svg {
+  font-size: 24px;
+}
+
+.menu-item.new-item::after {
+  content: "NEW";
+  color: red;
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.credit-history {
+  margin-bottom: 20px;
+}
+
+.credit-history h2 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.credit-item {
+  background-color: #af9696;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.available-credit {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.get-it {
+  margin-top: 20px;
+}
+
+.get-it h2 {
+  margin-bottom: 10px;
+}
+
+.get-it .logo {
+  margin-top: 10px;
+}
+
+.get-it img {
+  width: 100px;
+  height: auto;
+}
+
+/* Breakpoints */
+@media (max-width: 768px) {
+
+  .dashboard {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .menu-item {
+    min-width: 60px;
+    max-width: 100px;
+  }
+
+  .credit-item {
+    font-size: 0.9em;
+  }
+
+  .available-credit {
+    font-size: 1em;
+  }
+
+  .get-it img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .dashboard {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .menu-item {
+    flex: 1 1 45%;
+    min-width: 100px;
+  }
+
+  .credit-item {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+
+  .available-credit {
+    font-size: 0.9em;
+  }
+
+  .get-it img {
+    width: 60px;
+  }
+}

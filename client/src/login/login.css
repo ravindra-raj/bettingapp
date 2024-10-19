@@ -1,0 +1,92 @@
+.modal-box {
+  width: 90%;
+  max-width: 400px;
+  margin: 5% auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 60%;
+}
+
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logininput-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logininput {
+  width: 85%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-remember-checkbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-remember-checkbox label {
+  width: 85%;
+}
+
+.forgot-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  text-align: center; /* Center the link */
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.join-now-button {
+  margin-top: 15px;
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: none;
+}
+
+button {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+  .logininput-box {
+    margin-bottom: 12px;
+  }
+
+  .logininput, .modal-remember-checkbox label {
+    font-size: 14px;
+  }
+
+  .join-now-button {
+    font-size: 14px;
+  }
+}
+

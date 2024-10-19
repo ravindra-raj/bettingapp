@@ -1,0 +1,141 @@
+.user-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #6ddda5, #6dd47f);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .space {
+    margin-bottom: 100px;
+  }
+ 
+  .user-avatar {
+    background: linear-gradient(135deg, #ff6b6b, #f06595);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+ 
+  .user-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+ 
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80px;
+    margin: 10px 5px; /* Added margin for better spacing */
+    color: white;
+    flex: 1 0 40%; /* Flexbox properties to allow responsive resizing */
+    max-width: 100px;
+  }
+ 
+  #deposit {
+    background: linear-gradient(135deg, #28a745, #218838);
+  }
+ 
+  #withdraw {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+  }
+ 
+  #cashback {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+  }
+ 
+  #rewards {
+    background: linear-gradient(135deg, #17a2b8, #117a8b);
+  }
+ 
+  .option-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+ 
+  /* New CSS for the details section */
+  .user-details {
+    margin-top: 20px;
+  }
+ 
+  .detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+ 
+  .detail-row:hover {
+    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  }
+ 
+  .detail-icon {
+    font-size: 20px;
+    color: #495057;
+  }
+ 
+  .chevron-icon {
+    font-size: 18px;
+    color: #6c757d;
+  }
+ 
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .user-container {
+      padding: 20px;
+      background: linear-gradient(135deg, #6ddda5, #6dd47f);
+      border-radius: 10px;
+      text-align: center;
+      margin: 20px auto;
+      width: 90%;
+      height: auto;
+    }
+    .user-options {
+      justify-content: center;
+      align-items: center;
+    }
+ 
+    .option {
+      width: 45%;
+    }
+ 
+    .detail-row {
+      padding: 8px 12px;
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    .user-options {
+      justify-content: center;
+      align-items: center;
+     
+    }
+ 
+    .option {
+      width: 100%;
+      max-width: none;
+    }
+ 
+    .detail-row {
+      padding: 6px 10px;
+    }
+  }
+ 
+ 

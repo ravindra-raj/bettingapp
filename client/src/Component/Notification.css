@@ -1,0 +1,62 @@
+/* Notification.css */
+
+.notification {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .notification-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-header h1 {
+    margin: 0;
+  }
+  
+  .notification-tabs {
+    display: flex;
+    flex-direction: row; /* Align tabs horizontally */
+    justify-content: center; /* Center the tabs */
+    margin-bottom: 20px;
+  }
+  
+  .tab-item {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 10px 20px;
+    margin: 0 10px; /* Horizontal margin for spacing */
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    text-decoration: underline; /* Underline text by default */
+    text-align: center; /* Center align text */
+  }
+  
+  .tab-item.active {
+    color: #007bff; /* Change color when active */
+    text-decoration: none; /* Remove underline when active */
+  }
+  
+  .notification-content {
+    text-align: center;
+  }
+  
+  .no-data {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .notification-tabs {
+      flex-direction: column; /* Stack tabs vertically on small screens */
+    }
+  
+    .tab-item {
+      font-size: 1rem;
+      padding: 8px 15px;
+      margin: 5px 0; /* Vertical margin for spacing on small screens */
+    }
+  }
+  

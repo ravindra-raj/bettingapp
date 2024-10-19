@@ -1,0 +1,235 @@
+
+  
+  .profile-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        rgba(142, 196, 210, 0.7) 0%,  /* Start color with opacity */
+        rgba(224, 153, 220, 0.5) 50%,  /* Midpoint color with less opacity */
+        rgba(228, 111, 213, 0.7) 100%  /* End color with opacity */
+      ), url('https://example.com/betting-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  
+  .profile-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        rgba(142, 196, 210, 0.7) 0%,  /* Start color with opacity */
+        rgba(224, 153, 220, 0.5) 50%,  /* Midpoint color with less opacity */
+        rgba(228, 111, 213, 0.7) 100%  /* End color with opacity */
+      ), url('https://example.com/betting-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .profile-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px; /* Set a max-width for the form */
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-header h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .profile-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+  }
+  
+  .profile-image-change {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-form {
+    margin-top: 2rem;
+    max-width: 400px; /* Set a max-width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .form-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-details {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .profile-card {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 215, 0, 0.8),  /* Gold color with opacity for a rich look */
+        rgba(255, 69, 0, 0.8)  /* Red-Orange color with opacity for a vibrant effect */
+      );
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .profile-content {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .profile-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-card {
+      padding: 0.75rem;
+    }
+  
+    .profile-title {
+      font-size: 1rem;
+    }
+  
+    .profile-content {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-header h1 {
+      font-size: 1.25rem;
+    }
+  
+    .profile-card {
+      padding: 0.5rem;
+    }
+  
+    .profile-title {
+      font-size: 0.9rem;
+    }
+  
+    .profile-content {
+      font-size: 0.8rem;
+    }
+  }
+  .profile-form {
+    margin-top: 2rem;
+    max-width: 400px; /* Set a max-width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background: linear-gradient(
+        135deg,
+        rgba(255, 215, 0, 0.1),  /* Light Gold with opacity */
+        rgba(255, 69, 0, 0.1)    /* Light Red-Orange with opacity */
+      );
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+  }
+  
+  .form-submit-button:hover {
+    background-color: #0056b3;
+  }
+    

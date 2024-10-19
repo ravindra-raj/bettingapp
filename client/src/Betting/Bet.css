@@ -1,0 +1,377 @@
+/* .container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.top-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.time-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-option {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.league-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.league-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.league-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.league-name {
+  flex: 1;
+}
+
+.dropdown-icon {
+  font-size: 16px;
+}
+
+.league-details {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.match-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.match-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.match-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match-teams {
+  font-weight: bold;
+}
+
+.match-time {
+  color: #666;
+}
+
+.match-odds {
+  margin-top: 5px;
+}
+
+.odd-item {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.odd-h2h {
+  display: flex;
+  gap: 5px;
+}
+
+.odd-key {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.odd-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.odd-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.odd-button:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+  }
+
+  .time-options {
+    flex-direction: column;
+  }
+
+  .time-option {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-icon {
+    display: none;
+  }
+} */
+
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.tab-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tab,
+.search-input {
+  flex: 1;
+  padding: 10px;
+}
+
+.tab {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+/* .tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+} */
+
+.tab.active {
+  background-color: #333;
+  height: 45px;
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.top-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.time-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-option {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.league-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.league-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.league-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.league-name {
+  flex: 1;
+}
+
+.dropdown-icon {
+  font-size: 16px;
+}
+
+.league-details {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.match-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.match-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.match-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.match-teams {
+  font-weight: bold;
+}
+
+.match-time {
+  color: #666;
+}
+
+.match-odds {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.odd-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.odd-h2h {
+  display: flex;
+  gap: 5px;
+}
+
+.odd-key {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.odd-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.odd-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
